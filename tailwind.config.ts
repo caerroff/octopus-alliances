@@ -12,7 +12,7 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: "#5e0080",
-        secondary: "#a3590f",
+        secondary: "#FFA500",
       },
     },
   },
