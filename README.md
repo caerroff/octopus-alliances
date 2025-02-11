@@ -19,7 +19,9 @@ Requirements
 
 ### On MacOS
 With homebrew installed, run
-```brew install nvm```
+```
+brew install nvm
+```
 
 Then follow 'MacOS + Linux'
 ### Linux
@@ -30,9 +32,13 @@ Install nvm following this guide (this guide)[https://github.com/nvm-sh/nvm?tab=
 #### Other distros
 nvm is available for most distros, and in the AUR for Arch.
 
+Once installed, make sure you restart your terminal to have the new executable in your PATH
+
 ### MacOS + Linux
 Once NVM has been installed, run 
-```nvm alias default node```
+```
+nvm alias default node
+```
 
 ### Windows
 Either install WSL and then follow the Linux instructions, either go on the (Official Website)[https://docs.npmjs.com/downloading-and-installing-node-js-and-npm] 
