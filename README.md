@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Octopus Alliances
+This application has been developped in NextJS. The documentation of the framework can be found on the (nextJS website)[https://nextjs.org/docs]
 
-## Getting Started
+## Colour, design and styles
+The application is using (TailwindCSS)[https://tailwindcss.com/docs/styling-with-utility-classes], a CSS library allowing us to put a `class` attribute on any HTML tag to apply CSS styles.
+For example, `<h1 className="text-4xl"></h1>` will apply text-4xl, which translated to `font-size: 2.25rem` in CSS.
+The TailwindCSS website contains the entire reference.
 
-First, run the development server:
+Colours are handled by TailwindCSS, and its configuration has been extended with our `primary` and `secondary` colour in the `tailwind.config.ts` file.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The layout of the application ('HTML' code) is available in the `src/app/page.tsx` file.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Modification of the style, colours etc.. should be done in this file.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Dev environment
+Requirements
+-   npm 18.8>=
+-   node (will be installed with npm)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### On MacOS
+With homebrew installed, run
+```brew install nvm```
 
-## Learn More
+Then follow 'MacOS + Linux'
+### Linux
 
-To learn more about Next.js, take a look at the following resources:
+#### Ubuntu
+Install nvm following this guide (this guide)[https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating]
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### Other distros
+nvm is available for most distros, and in the AUR for Arch.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### MacOS + Linux
+Once NVM has been installed, run 
+```nvm alias default node```
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Windows
+Either install WSL and then follow the Linux instructions, either go on the (Official Website)[https://docs.npmjs.com/downloading-and-installing-node-js-and-npm] 
