@@ -42,3 +42,20 @@ nvm alias default node
 
 ### Windows
 Either install WSL and then follow the Linux instructions, either go on the (Official Website)[https://docs.npmjs.com/downloading-and-installing-node-js-and-npm] 
+
+## Deployment 
+
+To create a static build of the application, run 
+```
+npm run build
+```
+This will create a `.next` folder, containing all the files needed for the application.
+
+To serve it with a NodeJS server, run
+```
+npm run start
+```
+The complete documentation is available (here)[https://nextjs.org/docs/pages/building-your-application/deploying#nodejs-server] 
+
+Alternatively, you can run the application in a docker and setup a proxy to serve on port 80.  
+(Here)[https://nextjs.org/docs/pages/building-your-application/deploying#docker-image] is the documentation for the Docker.
