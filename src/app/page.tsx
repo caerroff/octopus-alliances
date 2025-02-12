@@ -7,8 +7,8 @@ export default function Home() {
       <Base>
         <div className="relative">
           <Image src={"/solvay.jpg"} height={1500} width={1500} objectFit="cover" alt="Solvay Conference" />
-          <div className="absolute bottom-32 left-0 right-0 text-center text-white">
-            <h1 className="text-6xl font-bold">Octopus Alliances</h1>
+          <div className="absolute bottom-24 left-0 right-0 text-center text-white text-shadow bg-slate-500 bg-opacity-20">
+            <h1 className="text-7xl font-bold">Octopus Alliances</h1>
             <p className="text-2xl font-bold">It&apos;s all about you</p>
           </div>
         </div>
