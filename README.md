@@ -2,7 +2,7 @@
 This application has been developped in NextJS. The documentation of the framework can be found on the [nextJS website](https://nextjs.org/docs)
 
 - [Colour, design and styles](#colour-design-and-styles)
-- [Dev environment](#dev-environment)]
+- [Dev environment](#dev-environment)
   - [On MacOS](#on-macos)
   - [Linux](#linux)
     - [Ubuntu](#ubuntu)
