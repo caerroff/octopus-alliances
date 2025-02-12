@@ -1,15 +1,15 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Topbar() {
     return (
         <>
             <div className="flex justify-between bg-primary min-h-10 place-items-center">
-                <Image height={64} width={64} src={"/octopus.png"} alt="Octopus Logo" className="m-2 object-cover rounded-2xl" />
-                <div className="flex justify-center">
-                    <Link href={"/"} className="text-white p-2 m-2 font-bold text-2xl hover:text-secondary">Home</Link>
+                <Image height={50} width={50} src={"/octopus.png"} alt="Octopus Logo" className="m-2 object-cover rounded-2xl" />
+                <div className="flex flex-col justify-center text-orange-300 text-2xl text-center font-bold">
+                   <p>Octopus Alliances</p>
+                   <p className="text-lg">It&apos;s all about you</p>
                 </div>
-                <Image height={64} width={64} src={"/octopus.png"} alt="Octopus Logo" className="m-2 object-cover rounded-2xl" />
+                <Image height={50} width={50} src={"/octopus.png"} alt="Octopus Logo" className="m-2 object-cover rounded-2xl" />
             </div>
         </>
     )

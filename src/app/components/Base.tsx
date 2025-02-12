@@ -1,4 +1,5 @@
 import { JSX } from "react";
+import Footer from "./Footer";
 import Topbar from "./Topbar";
 
 type Props = {
@@ -9,9 +10,10 @@ export default function Base(props: Props) {
     return (
         <>
             <Topbar />
-            <div className="h-screen bg-purple-100 p-2">
+            <div className="min-h-screen bg-purple-100">
                 {props.children}
             </div>
+            <Footer />
         </>
     )
 }
