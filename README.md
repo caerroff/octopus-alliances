@@ -1,6 +1,16 @@
 # Octopus Alliances
 This application has been developped in NextJS. The documentation of the framework can be found on the [nextJS website](https://nextjs.org/docs)
 
+- [Colour, design and styles](#colour-design-and-styles)
+- [Dev environment](#dev-environment)]
+  - [On MacOS](#on-macos)
+  - [Linux](#linux)
+    - [Ubuntu](#ubuntu)
+    - [Other distros](#other-distros)
+  - [MacOS + Linux](#macos-and-linux)
+  - [Windows](#windows)
+- [Deployment](#deployment)
+
 ## Colour, design and styles
 The application is using [TailwindCSS](https://tailwindcss.com/docs/styling-with-utility-classes), a CSS library allowing us to put a `class` attribute on any HTML tag to apply CSS styles.
 For example, `<h1 className="text-4xl"></h1>` will apply text-4xl, which translated to `font-size: 2.25rem` in CSS.
@@ -34,7 +44,7 @@ nvm is available for most distros, and in the AUR for Arch.
 
 Once installed, make sure you restart your terminal to have the new executable in your PATH
 
-### MacOS + Linux
+### MacOS and Linux
 Once NVM has been installed, run 
 ```
 nvm alias default node
