@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Base from "./components/Base";
 import { usePathname } from "next/navigation";
@@ -40,7 +41,7 @@ export default function Home() {
           <div className="flex pt-10">
             <div className="w-1/2">
               <div className="flex space-x-5 justify-center">
-                <Image src={"/octopus.png"} height={150} width={150} alt="Octopus Logo" className="place-self-center rounded-2xl" />
+                <Image src={pathname + "/octopus.png"} height={150} width={150} alt="Octopus Logo" className="place-self-center rounded-2xl" />
                 <p className="font-bold text-3xl self-center font-serif">Occy Business Alliances</p>
               </div>
               <h3 className="font-bold text-2xl py-5">Directories</h3>
