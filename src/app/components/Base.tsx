@@ -10,7 +10,7 @@ export default function Base(props: Props) {
     return (
         <>
             <Topbar />
-            <div className="min-h-screen bg-purple-100">
+            <div className="min-h-screen bg-primary text-white">
                 {props.children}
             </div>
             <Footer />
