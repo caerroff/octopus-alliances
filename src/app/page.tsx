@@ -21,8 +21,7 @@ export default function Home() {
       console.log(pageIndex, typeof pageIndex)
       setPageIndex(pageIndex + 1)
       console.log(pages[pageIndex])
-      // setPageIndex(pageIndex + 1 >= pages.length ? 0 : pageIndex + 1)
-      pages[pageIndex]!.current?.scrollIntoView({ behavior: "smooth" })
+      pages.at(pageIndex)
     }
 
     if (typeof window !== 'undefined') {
