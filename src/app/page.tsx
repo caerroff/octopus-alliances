@@ -2,14 +2,40 @@
 import Image from "next/image";
 import Base from "./components/Base";
 import { usePathname } from "next/navigation";
+import { createRef, Ref, useEffect, useState } from "react";
 
 export default function Home() {
   const pathname = usePathname()
 
+  const page1 = createRef<HTMLDivElement>()
+  const page2 = createRef<HTMLDivElement>()
+  const page3 = createRef<HTMLDivElement>()
+  const pages = new Array<Ref<HTMLDivElement>>
+  pages.push(page1)
+  pages.push(page2)
+  pages.push(page3)
+  const [pageIndex, setPageIndex] = useState(0)
+
+  useEffect(() => {
+    function changePage() {
+      console.log(pageIndex, typeof pageIndex)
+      setPageIndex(pageIndex + 1)
+      console.log(pages[pageIndex])
+      // setPageIndex(pageIndex + 1 >= pages.length ? 0 : pageIndex + 1)
+      pages[pageIndex]!.current?.scrollIntoView({ behavior: "smooth" })
+    }
+
+    if (typeof window !== 'undefined') {
+      window.addEventListener('click', () => {
+        changePage()
+      })
+    }
+  }, [])
+
   return (
     <>
       <Base>
-        <div className="min-h-screen place-content-center">
+        <div className="min-h-screen place-content-center" ref={page1}>
           <div className="relative">
             <Image src={"/solvay.jpg"} height={1500} width={1500} className="object-cover h-[60vh] lg:h-auto w-screen" alt="Solvay Conference" />
             <div className="absolute bottom-24 left-0 right-0 text-center text-white text-shadow bg-slate-500 bg-opacity-20">
@@ -29,17 +55,17 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="min-h-screen place-content-center">
+        <div className="min-h-screen place-content-center" ref={page2}>
           <div className="flex pt-10">
             <div className="w-1/2 flex flex-col justify-center place-items-center">
-            <div className="p-2 py-10 bg-stone-800">
-              <h2 className="text-xl text-secondary">Occy Social Alliances</h2>
-              <p className="w-2/3 text-justify">
-                Occy Social Alliance is a decentralized global platform designed for authentic connection, collaboration, and collective action.
-                More than just about business, Occy is built on shared values and a commitment to doing what is right, helping people and local communities.
-                By providing cutting-edge technology, vital resources, and strategic guidance, Occy empowers a global network of people and communities to create a more just, sustainable, and connected future.
-              </p>
-            </div>
+              <div className="p-2 py-10 bg-stone-800">
+                <h2 className="text-xl text-secondary">Occy Social Alliances</h2>
+                <p className="w-2/3 text-justify">
+                  Occy Social Alliance is a decentralized global platform designed for authentic connection, collaboration, and collective action.
+                  More than just about business, Occy is built on shared values and a commitment to doing what is right, helping people and local communities.
+                  By providing cutting-edge technology, vital resources, and strategic guidance, Occy empowers a global network of people and communities to create a more just, sustainable, and connected future.
+                </p>
+              </div>
             </div>
             <div className="w-1/2">
               <div className="flex space-x-5 justify-center">
@@ -51,7 +77,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex pt-10">
+        <div className="pt-10 min-h-screen content-center" ref={page3}>
           <div className="w-1/2">
             <div className="flex space-x-5 justify-center">
               <Image src={(pathname == '/' ? "" : pathname) + "/octopus.png"} height={150} width={150} alt="Octopus Logo" className="place-self-center rounded-2xl" />
