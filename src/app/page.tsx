@@ -10,24 +10,28 @@ export default function Home() {
   const page1 = createRef<HTMLDivElement>()
   const page2 = createRef<HTMLDivElement>()
   const page3 = createRef<HTMLDivElement>()
-  const pages = [page1, page2, page3]
+  const page4 = createRef<HTMLDivElement>()
+  const page5 = createRef<HTMLDivElement>()
+  const page6 = createRef<HTMLDivElement>()
+  const pages = [page1, page2, page3, page4, page5, page6]
   let pageIndex = 0
 
   useEffect(() => {
     function changePage() {
-      if(pageIndex + 1 >= pages.length){
+      if (pageIndex + 1 >= pages.length) {
         pageIndex = 0
-      }else{
-        pageIndex ++;
+      } else {
+        pageIndex++;
       }
-      pages[pageIndex].current?.scrollIntoView({behavior: "smooth"})
+      pages[pageIndex].current?.scrollIntoView({ behavior: "smooth" })
     }
 
     if (typeof window !== 'undefined') {
       window.addEventListener('wheel', () => {
         setTimeout(() => {
           changePage()
-      }, 20)})
+        }, 20)
+      })
     }
   }, [])
 
@@ -55,18 +59,27 @@ export default function Home() {
         </div>
 
         <div className="min-h-screen place-content-center" ref={page2}>
-          <div className="flex pt-10">
-            <div className="w-1/2 flex flex-col justify-center place-items-center">
-              <div className="p-2 py-10 bg-stone-800">
-                <h2 className="text-xl text-secondary">Occy Social Alliances</h2>
-                <p className="w-2/3 text-justify">
-                  Occy Social Alliance is a decentralized global platform designed for authentic connection, collaboration, and collective action.
-                  More than just about business, Occy is built on shared values and a commitment to doing what is right, helping people and local communities.
-                  By providing cutting-edge technology, vital resources, and strategic guidance, Occy empowers a global network of people and communities to create a more just, sustainable, and connected future.
-                </p>
+          <div className="flex flex-col lg:flex-row pt-10">
+            <div className="w-1/2 flex flex-col justify-center place-items-center mt-12">
+              <div className="w-2/3 mx-auto">
+                <div className="p-2 py-10 bg-stone-800 px-5">
+                  <h2 className="text-xl text-secondary text-center font-bold">Occy Social Alliances</h2>
+                  <p className="text-justify font-serif text-lg">
+                    Occy Social Alliance is a decentralized global platform designed for authentic connection, collaboration, and collective action.
+                    <br />
+                    <br />
+                    More than just about business, Occy is built on shared values and a commitment to doing what is right, helping people and local communities.
+                    <br />
+                    <br />
+                    By providing cutting-edge technology, vital resources, and strategic guidance, Occy empowers a global network of people and communities to create a more just, sustainable, and connected future.
+                  </p>
+                  <div className="flex justify-end">
+                    <a href="#" className="bg-secondary hover:bg-yellow-600 text-white p-2 mt-2 rounded-lg">Learn more</a>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="w-1/2">
+            <div className="w-1/2 -mt-24">
               <div className="flex space-x-5 justify-center">
                 <Image src={"/octopus.png"} height={150} width={150} alt="Octopus Logo" className="place-self-center rounded-2xl object-cover" />
                 <p className="font-bold text-3xl self-center font-serif">Occy Social Alliances</p>
@@ -77,18 +90,125 @@ export default function Home() {
         </div>
 
         <div className="pt-10 min-h-screen content-center" ref={page3}>
-          <div className="w-1/2">
-            <div className="flex space-x-5 justify-center">
-              <Image src={(pathname == '/' ? "" : pathname) + "/octopus.png"} height={150} width={150} alt="Octopus Logo" className="place-self-center rounded-2xl" />
-              <p className="font-bold text-3xl self-center font-serif">Occy Business Alliances</p>
+          <div className="flex flex-col lg:flex-row-reverse pt-10">
+            <div className="w-1/2 flex flex-col justify-center place-items-center">
+              <div className="w-2/3 mx-auto">
+                <div className="p-2 py-10 bg-stone-800 px-5">
+                  <h2 className="text-xl text-secondary text-center font-bold">Occy Business Alliances</h2>
+                  <p className="text-justify font-serif text-lg">
+                    Many business owners struggle with directory listings. The information is scattered, outdated, inconsistent, or ineffective. This can lead to time-consuming updates, stress in measuring performance, duplicate listings, challenges in responding to reviews and hindering your growth.
+                    <br />
+                    <br />
+                    Occy will help you with that struggle, ensuring your information is accurate, impactful, and easy to manage, helping your business thrive.
+                  </p>
+                </div>
+              </div>
             </div>
-            <h3 className="font-bold text-2xl py-5">Directories</h3>
-            <p>Many business owners struggle with directory information that is scattered, outdated, inconsistent, or ineffective. For you this can lead to time-consuming updates, stress in measuring your performance, duplicate listings, and challenges in responding to your reviews.
-              <br />
-              <br />
-              Occy will help you with that struggle, ensuring your information is accurate, impactful, and easy to manage, helping your business thrive.</p>
+            <div className="w-1/2 mt-36">
+              <img src={"https://place-hold.it/750x750"} className="mx-auto w-2/3" height={500} width={500} alt="Placeholder" />
+            </div>
           </div>
-          <div className="w-1/2"></div>
+        </div>
+
+        <div className="pt-10 min-h-screen content-center" ref={page4}>
+          <div className="flex flex-col lg:flex-row pt-10">
+            <div className="w-1/2 flex flex-col justify-center place-items-center">
+              <div className="w-2/3 mx-auto">
+                <div className="p-2 py-10 bg-stone-800 px-5">
+                  <h2 className="text-xl text-secondary text-center font-bold">Occy Directory Solutions</h2>
+                  <h3 className="font-bold text-lg text-center">Directory Listing</h3>
+                  <p className="text-center font-serif text-lg">
+                    Free listing on our directory
+                    <br />
+                    <br />
+                    Free biography of your business
+                  </p>
+                  <div className="flex justify-end pt-5 space-x-3">
+                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Claim Benefit</a>
+                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="w-1/2 mt-36">
+              <img src={"https://place-hold.it/750x750"} className="mx-auto w-2/3" height={500} width={500} alt="Placeholder" />
+            </div>
+          </div>
+        </div>
+
+        <div className="pt-10 min-h-screen content-center" ref={page5}>
+          <div className="flex flex-col lg:flex-row-reverse pt-10">
+            <div className="w-1/2 flex flex-col justify-center place-items-center">
+              <div className="w-2/3 mx-auto">
+                <div className="p-2 py-10 bg-stone-800 px-5">
+                  <h2 className="text-xl text-secondary text-center font-bold">Occy Directory Solutions</h2>
+                  <h3 className="font-bold text-lg text-center">Directory Management</h3>
+                  <p className="text-center font-serif text-lg">
+                    Ensure your Name, Address and Phone Number (NAP) are current
+                  </p>
+                  <div className="flex justify-end pt-5 space-x-3">
+                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Claim Benefit</a>
+                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="w-1/2 mt-36">
+              <img src={"https://place-hold.it/750x750"} className="mx-auto w-2/3" height={500} width={500} alt="Placeholder" />
+            </div>
+          </div>
+        </div>
+
+        <div className="pt-10 min-h-screen content-center" ref={page5}>
+          <div className="flex flex-col lg:flex-row pt-10">
+            <div className="w-1/2 flex flex-col justify-center place-items-center">
+              <div className="w-2/3 mx-auto">
+                <div className="p-2 py-10 bg-stone-800 px-5">
+                  <h2 className="text-xl text-secondary text-center font-bold">Occy Directory Solutions</h2>
+                  <h3 className="font-bold text-lg text-center">Reputation Management</h3>
+                  <p className="text-center font-serif text-lg">
+                    Protecting and enhancing your image, ensuring a positive online reputation to enable you to thrive.
+                    <br />
+                    <br />
+                    Monitoring with alerts on all major platforms.
+                    <br />
+                    <br />
+                    Tracking and responding to your reviews across multiple sites
+                  </p>
+                  <div className="flex justify-end pt-5 space-x-3">
+                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Claim Benefit</a>
+                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="w-1/2 mt-36">
+              <img src={"https://place-hold.it/750x750"} className="mx-auto w-2/3" height={500} width={500} alt="Placeholder" />
+            </div>
+          </div>
+        </div>
+
+        <div className="pt-10 content-center" ref={page6}>
+          <div className="flex flex-col lg:flex-row-reverse pt-10 pb-5">
+            <div className="w-1/2 flex flex-col justify-center place-items-center">
+              <div className="w-2/3 mx-auto">
+                <div className="p-2 py-10 bg-stone-800 px-5">
+                  <h2 className="text-xl text-secondary text-center font-bold">Occy Directory Solutions</h2>
+                  <h3 className="font-bold text-lg text-center">More than XX Solutions to help you grow your business including :</h3>
+                  <p className="text-center font-serif text-lg">
+                    XXXXXXXXXXXXX
+                  </p>
+                  <div className="flex justify-end pt-5 space-x-3">
+                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Claim Benefit</a>
+                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="w-1/2 mt-36">
+              <img src={"https://place-hold.it/750x750"} className="mx-auto w-2/3" height={500} width={500} alt="Placeholder" />
+            </div>
+          </div>
         </div>
       </Base >
     </>
