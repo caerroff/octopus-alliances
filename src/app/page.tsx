@@ -10,31 +10,31 @@ export default function Home() {
   const page1 = createRef<HTMLDivElement>()
   const page2 = createRef<HTMLDivElement>()
   const page3 = createRef<HTMLDivElement>()
-  const pages = new Array<Ref<HTMLDivElement>>
-  pages.push(page1)
-  pages.push(page2)
-  pages.push(page3)
-  const [pageIndex, setPageIndex] = useState(0)
+  const pages = [page1, page2, page3]
+  let pageIndex = 0
 
   useEffect(() => {
     function changePage() {
-      console.log(pageIndex, typeof pageIndex)
-      setPageIndex(pageIndex + 1)
-      console.log(pages[pageIndex])
-      pages.at(pageIndex)
+      if(pageIndex + 1 >= pages.length){
+        pageIndex = 0
+      }else{
+        pageIndex ++;
+      }
+      pages[pageIndex].current?.scrollIntoView({behavior: "smooth"})
     }
 
     if (typeof window !== 'undefined') {
-      window.addEventListener('click', () => {
-        changePage()
-      })
+      window.addEventListener('wheel', () => {
+        setTimeout(() => {
+          changePage()
+      }, 20)})
     }
   }, [])
 
   return (
     <>
-      <Base>
-        <div className="min-h-screen place-content-center" ref={page1}>
+      <Base ref={page1}>
+        <div className="place-content-center">
           <div className="relative">
             <Image src={"/solvay.jpg"} height={1500} width={1500} className="object-cover h-[60vh] lg:h-auto w-screen" alt="Solvay Conference" />
             <div className="absolute bottom-24 left-0 right-0 text-center text-white text-shadow bg-slate-500 bg-opacity-20">
