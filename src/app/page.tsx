@@ -1,12 +1,9 @@
 "use client";
 import Image from "next/image";
 import Base from "./components/Base";
-import { usePathname } from "next/navigation";
-import { createRef, Ref, useEffect, useState } from "react";
+import { createRef, useEffect } from "react";
 
 export default function Home() {
-  const pathname = usePathname()
-
   const page1 = createRef<HTMLDivElement>()
   const page2 = createRef<HTMLDivElement>()
   const page3 = createRef<HTMLDivElement>()

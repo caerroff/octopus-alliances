@@ -1,6 +1,4 @@
 export default function Footer() {
-    const currentYear = (new Date()).getFullYear();
-
 
     return (
         <div className="min-h-20 bg-stone-800 flex flex-col justify-center px-5 text-white">
