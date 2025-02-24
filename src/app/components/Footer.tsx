@@ -4,7 +4,7 @@ export default function Footer() {
         <div className="min-h-20 bg-stone-800 flex flex-col justify-center px-5 text-white">
             <h4 className="text-2xl text-red-500 text-center">Footer - TBC</h4>
             <p className="text-secondary text-lg">About Us</p>
-            <p>Octopus Alliances. It's all about you. We are building a dynamic global commerce ecosystem that will empower you as individuals, businesses, and
+            <p>Octopus Alliances. It&apos;s all about you. We are building a dynamic global commerce ecosystem that will empower you as individuals, businesses, and
                 communities to connect, collaborate and thrive. Occy Business Alliance is a powerful global, country specific platform to elevate your online presence, stand
                 out in search results and attract, convert and engage more customers. Your membership will also enable you to engage with other alliance members in your
                 local community, access business development tools and programs and enjoy exclusive rewards.
