@@ -10,26 +10,50 @@ export default function Home() {
   const page4 = createRef<HTMLDivElement>()
   const page5 = createRef<HTMLDivElement>()
   const page6 = createRef<HTMLDivElement>()
-  const pages = [page1, page2, page3, page4, page5, page6]
+  const page7 = createRef<HTMLDivElement>()
+  const pages = [page1, page2, page3, page4, page5, page6, page7]
   let pageIndex = 0
+  let canMove = true;
 
   useEffect(() => {
-    function changePage() {
-      if (pageIndex + 1 >= pages.length) {
-        pageIndex = 0
-      } else {
-        pageIndex++;
+    function changePage(delta: number) {
+      if (!canMove || (delta > -70 && delta < 70)) {
+        return
       }
+
+      if (delta < 0) {
+        if (pageIndex > 0) {
+          pageIndex--;
+        }
+      }
+      else {
+        if (pageIndex + 1 < pages.length) {
+          pageIndex++;
+        }
+      }
+
+      console.log(pageIndex);
+
       pages[pageIndex].current?.scrollIntoView({ behavior: "smooth" })
+
+      if (pageIndex == pages.length) {
+        window.scroll({top: delta})
+      }
+
+      canMove = false;
+      setTimeout(() => {
+        canMove = true;
+      }, 400)
     }
 
     if (typeof window !== 'undefined') {
-      window.addEventListener('wheel', () => {
-        setTimeout(() => {
-          changePage()
-        }, 20)
-      })
+      window.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        changePage(e.deltaY)
+      }, { passive: false })
     }
+
   }, [])
 
   return (
@@ -156,7 +180,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="pt-10 min-h-screen content-center" ref={page5}>
+        <div className="pt-10 min-h-screen content-center" ref={page6}>
           <div className="flex flex-col lg:flex-row pt-10">
             <div className="w-1/2 flex flex-col justify-center place-items-center">
               <div className="w-2/3 mx-auto">
@@ -185,7 +209,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="pt-10 content-center" ref={page6}>
+        <div className="pt-10 content-center" ref={page7}>
           <div className="flex flex-col lg:flex-row-reverse pt-10 pb-5">
             <div className="w-1/2 flex flex-col justify-center place-items-center">
               <div className="w-2/3 mx-auto">
