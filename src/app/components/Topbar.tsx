@@ -6,7 +6,9 @@ export default function Topbar() {
     return (
         <>
             <div className="flex justify-between bg-primary min-h-20 place-items-center">
-                <div></div>
+                <div>
+                    <Image src={"/octopus.png"} className="rounded-2xl ml-2" height={60} width={60} alt="Octopus Logo" />
+                </div>
                 <div className="flex flex-col justify-center text-secondary text-2xl text-center font-bold">
                     <p>Octopus Alliances</p>
                     <p className="text-lg">It&apos;s all about you</p>
