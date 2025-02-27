@@ -80,9 +80,9 @@ export default function Home() {
         </div>
 
         <div className="min-h-screen place-content-center" ref={page2}>
-          <div className="flex flex-col lg:flex-row pt-10">
-            <div className="w-1/2 flex flex-col justify-center place-items-center mt-12">
-              <div className="w-2/3 mx-auto">
+          <div className="flex flex-col-reverse lg:flex-row pt-10">
+            <div className="lg:w-1/2 flex flex-col justify-center place-items-center mt-12">
+              <div className="lg:w-2/3 px-5 lg:px-0 mx-auto">
                 <div className="p-2 py-10 bg-stone-800 px-5">
                   <h2 className="text-xl text-secondary text-center font-bold">Occy Social Alliances</h2>
                   <p className="text-justify font-serif text-lg">
@@ -100,7 +100,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="w-1/2 -mt-12">
+            <div className="lg:w-1/2 lg:-mt-12 p-5 ">
               <div className="flex space-x-5 justify-center">
                 <Image src={"/octopus.png"} height={150} width={150} alt="Octopus Logo" className="place-self-center rounded-2xl object-cover" />
                 <p className="font-bold text-3xl self-center font-serif">Occy Social Alliances</p>
@@ -111,9 +111,9 @@ export default function Home() {
         </div>
 
         <div className="pt-10 min-h-screen content-center" ref={page3}>
-          <div className="flex flex-col lg:flex-row-reverse pt-10 -mt-52">
-            <div className="w-1/2 flex flex-col justify-center place-items-center">
-              <div className="w-2/3 mx-auto">
+          <div className="flex flex-col-reverse lg:flex-row-reverse pt-10 lg:-mt-52">
+            <div className="lg:w-1/2 flex flex-col justify-center place-items-center">
+              <div className="lg:w-2/3 p-5 lg:p-0 mx-auto">
                 <div className="p-2 py-10 bg-stone-800 px-5">
                   <h2 className="text-xl text-secondary text-center font-bold">Occy Business Alliances</h2>
                   <p className="text-justify font-serif text-lg">
@@ -125,17 +125,17 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="w-1/2 mt-36">
+            <div className="lg:w-1/2 lg:mt-36">
               <img src={"https://place-hold.it/750x750"} className="mx-auto w-2/3" height={500} width={500} alt="Placeholder" />
             </div>
           </div>
         </div>
 
-        <div className="pt-10 min-h-screen content-center" ref={page4}>
-          <div className="flex flex-col lg:flex-row pt-10 -mt-52">
-            <div className="w-1/2 flex flex-col justify-center place-items-center">
-              <div className="w-2/3 mx-auto">
-                <div className="p-2 py-10 bg-stone-800 px-5">
+        <div className="lg:pt-10 min-h-screen content-center" ref={page4}>
+          <div className="flex flex-col-reverse lg:flex-row lg:pt-10 lg:-mt-52">
+            <div className="lg:w-1/2 flex flex-col justify-center place-items-center">
+              <div className="lg:w-2/3 mx-auto">
+                <div className="py-10 bg-stone-800 px-5">
                   <h2 className="text-xl text-secondary text-center font-bold">Occy Directory Solutions</h2>
                   <h3 className="font-bold text-lg text-center">Directory Listing</h3>
                   <p className="text-center font-serif text-lg">
@@ -151,16 +151,16 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="w-1/2 mt-36">
+            <div className="lg:w-1/2 lg:mt-36 pb-5 lg:pb-0">
               <img src={"https://place-hold.it/750x750"} className="mx-auto w-2/3" height={500} width={500} alt="Placeholder" />
             </div>
           </div>
         </div>
 
-        <div className="pt-10 min-h-screen content-center" ref={page5}>
-          <div className="flex flex-col lg:flex-row-reverse pt-10 -mt-52">
-            <div className="w-1/2 flex flex-col justify-center place-items-center">
-              <div className="w-2/3 mx-auto">
+        <div className="lg:pt-10 min-h-screen content-center" ref={page5}>
+          <div className="flex flex-col-reverse lg:flex-row-reverse lg:pt-10 lg:-mt-52">
+            <div className="lg:w-1/2 flex flex-col justify-center place-items-center">
+              <div className="lg:w-2/3 m-5 px-5 lg:m-0 lg:px-0 mx-auto">
                 <div className="p-2 py-10 bg-stone-800 px-5">
                   <h2 className="text-xl text-secondary text-center font-bold">Occy Directory Solutions</h2>
                   <h3 className="font-bold text-lg text-center">Directory Management</h3>
@@ -174,16 +174,16 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="w-1/2 mt-36">
+            <div className="lg:w-1/2 lg:mt-36">
               <img src={"https://place-hold.it/750x750"} className="mx-auto w-2/3" height={500} width={500} alt="Placeholder" />
             </div>
           </div>
         </div>
 
-        <div className="pt-10 min-h-screen content-center" ref={page6}>
-          <div className="flex flex-col lg:flex-row pt-10 -mt-52">
-            <div className="w-1/2 flex flex-col justify-center place-items-center">
-              <div className="w-2/3 mx-auto">
+        <div className="lg:pt-10 min-h-screen content-center" ref={page6}>
+          <div className="flex flex-col-reverse lg:flex-row pt-10 lg:-mt-52">
+            <div className="lg:w-1/2 flex flex-col justify-center place-items-center">
+              <div className="lg:w-2/3 mx-auto p-5 lg:p-0">
                 <div className="p-2 py-10 bg-stone-800 px-5">
                   <h2 className="text-xl text-secondary text-center font-bold">Occy Directory Solutions</h2>
                   <h3 className="font-bold text-lg text-center">Reputation Management</h3>
@@ -203,16 +203,16 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="w-1/2 mt-36">
+            <div className="lg:w-1/2 lg:mt-36">
               <img src={"https://place-hold.it/750x750"} className="mx-auto w-2/3" height={500} width={500} alt="Placeholder" />
             </div>
           </div>
         </div>
 
-        <div className="pt-10 content-center" ref={page7}>
-          <div className="flex flex-col lg:flex-row-reverse -mt-24 pb-5">
-            <div className="w-1/2 flex flex-col justify-center place-items-center">
-              <div className="w-2/3 mx-auto">
+        <div className="lg:pt-10 content-center" ref={page7}>
+          <div className="flex flex-col-reverse lg:flex-row-reverse lg:-mt-24 pb-5">
+            <div className="lg:w-1/2 flex flex-col justify-center place-items-center">
+              <div className="lg:w-2/3 mx-auto p-5 lg:p-0">
                 <div className="p-2 py-10 bg-stone-800 px-5">
                   <h2 className="text-xl text-secondary text-center font-bold">Occy Directory Solutions</h2>
                   <h3 className="font-bold text-lg text-center">More than XX Solutions to help you grow your business including :</h3>
@@ -226,7 +226,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="w-1/2 mt-36">
+            <div className="lg:w-1/2 lg:mt-36">
               <img src={"https://place-hold.it/750x750"} className="mx-auto w-2/3" height={500} width={500} alt="Placeholder" />
             </div>
           </div>
