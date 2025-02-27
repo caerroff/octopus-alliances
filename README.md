@@ -1,19 +1,18 @@
 # Octopus Alliances
 This application has been developped in NextJS. The documentation of the framework can be found on the [nextJS website](https://nextjs.org/docs)
 
-- [[#Colour, design and styles|Colour, design and styles]]
-	- [[#Colour, design and styles#Styling|Styling]]
-	- [[#Colour, design and styles#Modifying the layout|Modifying the layout]]
-	- [[#Colour, design and styles#Changing Content|Changing Content]]
-	- [[#Colour, design and styles#Changing and adding images|Changing and adding images]]
-- [[#Dev environment|Dev environment]]
-	- [[#Dev environment#On MacOS|On MacOS]]
-	- [[#Dev environment#Linux|Linux]]
-		- [[#Linux#Ubuntu|Ubuntu]]
-		- [[#Linux#Other distros|Other distros]]
-	- [[#Dev environment#MacOS and Linux|MacOS and Linux]]
-	- [[#Dev environment#Windows|Windows]]
-- [[#Deployment|Deployment]]
+- [Colour, design and styles](#colour-design-and-styles)
+  - [Styling](#styling)
+  - [Modifying the layout](#modifying-the-layout)
+  - [Changing Content](#changing-content)
+- [Dev environment](#dev-environment)
+  - [On MacOS](#on-macos)
+  - [Linux](#linux)
+    - [Ubuntu](#ubuntu)
+    - [Other distros](#other-distros)
+  - [MacOS + Linux](#macos-and-linux)
+  - [Windows](#windows)
+- [Deployment](#deployment)
 
 ## Colour, design and styles
 
