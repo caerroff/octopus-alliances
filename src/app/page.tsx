@@ -17,7 +17,7 @@ export default function Home() {
 
   useEffect(() => {
     function changePage(delta: number) {
-      if (!canMove || (delta > -70 && delta < 70)) {
+      if (!canMove || (delta > -10 && delta < 10)) {
         return
       }
 
