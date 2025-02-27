@@ -100,7 +100,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="w-1/2 -mt-24">
+            <div className="w-1/2 -mt-12">
               <div className="flex space-x-5 justify-center">
                 <Image src={"/octopus.png"} height={150} width={150} alt="Octopus Logo" className="place-self-center rounded-2xl object-cover" />
                 <p className="font-bold text-3xl self-center font-serif">Occy Social Alliances</p>
@@ -111,7 +111,7 @@ export default function Home() {
         </div>
 
         <div className="pt-10 min-h-screen content-center" ref={page3}>
-          <div className="flex flex-col lg:flex-row-reverse pt-10">
+          <div className="flex flex-col lg:flex-row-reverse pt-10 -mt-52">
             <div className="w-1/2 flex flex-col justify-center place-items-center">
               <div className="w-2/3 mx-auto">
                 <div className="p-2 py-10 bg-stone-800 px-5">
@@ -132,7 +132,7 @@ export default function Home() {
         </div>
 
         <div className="pt-10 min-h-screen content-center" ref={page4}>
-          <div className="flex flex-col lg:flex-row pt-10">
+          <div className="flex flex-col lg:flex-row pt-10 -mt-52">
             <div className="w-1/2 flex flex-col justify-center place-items-center">
               <div className="w-2/3 mx-auto">
                 <div className="p-2 py-10 bg-stone-800 px-5">
@@ -158,7 +158,7 @@ export default function Home() {
         </div>
 
         <div className="pt-10 min-h-screen content-center" ref={page5}>
-          <div className="flex flex-col lg:flex-row-reverse pt-10">
+          <div className="flex flex-col lg:flex-row-reverse pt-10 -mt-52">
             <div className="w-1/2 flex flex-col justify-center place-items-center">
               <div className="w-2/3 mx-auto">
                 <div className="p-2 py-10 bg-stone-800 px-5">
@@ -181,7 +181,7 @@ export default function Home() {
         </div>
 
         <div className="pt-10 min-h-screen content-center" ref={page6}>
-          <div className="flex flex-col lg:flex-row pt-10">
+          <div className="flex flex-col lg:flex-row pt-10 -mt-52">
             <div className="w-1/2 flex flex-col justify-center place-items-center">
               <div className="w-2/3 mx-auto">
                 <div className="p-2 py-10 bg-stone-800 px-5">
@@ -210,7 +210,7 @@ export default function Home() {
         </div>
 
         <div className="pt-10 content-center" ref={page7}>
-          <div className="flex flex-col lg:flex-row-reverse pt-10 pb-5">
+          <div className="flex flex-col lg:flex-row-reverse -mt-24 pb-5">
             <div className="w-1/2 flex flex-col justify-center place-items-center">
               <div className="w-2/3 mx-auto">
                 <div className="p-2 py-10 bg-stone-800 px-5">
