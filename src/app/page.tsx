@@ -37,7 +37,7 @@ export default function Home() {
       pages[pageIndex].current?.scrollIntoView({ behavior: "smooth" })
 
       if (pageIndex == pages.length) {
-        window.scroll({top: delta})
+        window.scroll({ top: delta })
       }
 
       canMove = false;
@@ -61,19 +61,18 @@ export default function Home() {
       <Base ref={page1}>
         <div className="place-content-center">
           <div className="relative">
-            <Image src={"/solvay.jpg"} height={1500} width={1500} className="object-cover h-[60vh] lg:h-auto w-screen" alt="Solvay Conference" />
+            <Image src={"/penguins.jpg"} height={1500} width={1500} className="object-cover h-[60vh] lg:h-[80vh] w-screen" alt="Penguins" />
             <div className="absolute bottom-24 left-0 right-0 text-center text-white text-shadow bg-slate-500 bg-opacity-20">
               <h1 className="text-3xl lg:text-7xl font-bold">Octopus Alliances</h1>
               <p className="text-xl lg:text-2xl font-bold">It&apos;s all about you</p>
             </div>
           </div>
-          <div className="px-4">
-            <p className="text-center text-xl">1927 conference that included Albert Einstein and Marie Curie. In all 27 Noble Prize winners attended.</p>
-            <h2 className="font-bold text-2xl text-center text-secondary">All about you</h2>
+          <div className="px-3">
+            {/* <p className="text-center text-xl">1927 conference that included Albert Einstein and Marie Curie. In all 27 Noble Prize winners attended.</p> */}
+            <h2 className="font-bold text-2xl text-center text-secondary">It's all about you</h2>
             <div className="flex justify-center">
-              <p className="text-lg text-center w-3/4 leading-5">
-                Occy Social and Business Alliances empower people, businesses and communities with solutions designed to drive your growth, and unlock your success.
-                We customize our approach to meet your unique needs, helping you to seize your opportunities, overcome your challenges, and thrive.
+              <p className="text-lg text-center leading-5">
+                Octopus Alliances is a social enterprise, building a dynamic global commerce ecosystem that will empower ayou as individuals, businesses, and communities to connect, collaborate, contribute and thrive.
               </p>
             </div>
           </div>
@@ -86,13 +85,13 @@ export default function Home() {
                 <div className="p-2 py-10 bg-stone-800 px-5">
                   <h2 className="text-xl text-secondary text-center font-bold">Occy Social Alliances</h2>
                   <p className="text-justify font-serif text-lg">
-                    Occy Social Alliance is a decentralized global platform designed for authentic connection, collaboration, and collective action.
+                    Occy Social Alliance is a decentralized world wide ecosystem with Time Credits, our community currency, to help facilitate authentic connection, collective action and a movement for good.
                     <br />
                     <br />
                     More than just about business, Occy is built on shared values and a commitment to doing what is right, helping people and local communities.
                     <br />
                     <br />
-                    By providing cutting-edge technology, vital resources, and strategic guidance, Occy empowers a global network of people and communities to create a more just, sustainable, and connected future.
+                    Occy empowers a global member network providing spaces and opportunities for you to communicate and collaborate. Ultimately creating a more just, equitable and sustainable future together.
                   </p>
                   <div className="flex justify-end">
                     <a href="#" className="bg-secondary hover:bg-yellow-600 text-white p-2 mt-2 rounded-lg">Learn more</a>
@@ -117,10 +116,16 @@ export default function Home() {
                 <div className="p-2 py-10 bg-stone-800 px-5">
                   <h2 className="text-xl text-secondary text-center font-bold">Occy Business Alliances</h2>
                   <p className="text-justify font-serif text-lg">
-                    Many business owners struggle with directory listings. The information is scattered, outdated, inconsistent, or ineffective. This can lead to time-consuming updates, stress in measuring performance, duplicate listings, challenges in responding to reviews and hindering your growth.
+                    Listing in a directory is often expensive, restrictive, in exible, inadequate and outdated, hindering business growth.
                     <br />
                     <br />
-                    Occy will help you with that struggle, ensuring your information is accurate, impactful, and easy to manage, helping your business thrive.
+                    Occy will help you with that struggle, to make your business story accurate, compelling, impactful, and easier to manage.
+                    <br />
+                    <br />
+                    With our support you can take full control, save time and optimize your directory listings turning them into a powerful tool to help your business thrive.
+                    <br />
+                    <br />
+                    Additionally with your utilization of our business currency, Trade Credits, we will create a business economy that will generate even greater growth opportunities for you.
                   </p>
                 </div>
               </div>
@@ -134,16 +139,15 @@ export default function Home() {
         <div className="lg:pt-10 min-h-screen content-center" ref={page4}>
           <div className="flex flex-col-reverse lg:flex-row lg:pt-10 lg:-mt-52">
             <div className="lg:w-1/2 flex flex-col justify-center place-items-center">
-              <div className="lg:w-2/3 mx-auto">
-                <div className="py-10 bg-stone-800 px-5">
+              <div className="lg:w-2/3 m-5 px-5 lg:m-0 lg:px-0 mx-auto">
+                <div className="p-2 py-10 bg-stone-800 px-5">
                   <h2 className="text-xl text-secondary text-center font-bold">Occy Directory Solutions</h2>
-                  <h3 className="font-bold text-lg text-center">Directory Listing</h3>
-                  <p className="text-center font-serif text-lg">
-                    Free listing on our directory
-                    <br />
-                    <br />
-                    Free biography of your business
-                  </p>
+                  <h3 className="font-bold text-lg text-center">Bronze Membership</h3>
+                  <ul className="text-start list-disc mx-10 font-serif text-lg">
+                    <li>Free Listing</li>
+                    <li>Free Trade Credits</li>
+                    <li>Limited bonus offer, upgrade to Silver Membership</li>
+                  </ul>
                   <div className="flex justify-end pt-5 space-x-3">
                     <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Claim Benefit</a>
                     <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Learn More</a>
@@ -160,15 +164,30 @@ export default function Home() {
         <div className="lg:pt-10 min-h-screen content-center" ref={page5}>
           <div className="flex flex-col-reverse lg:flex-row-reverse lg:pt-10 lg:-mt-52">
             <div className="lg:w-1/2 flex flex-col justify-center place-items-center">
-              <div className="lg:w-2/3 m-5 px-5 lg:m-0 lg:px-0 mx-auto">
+              <div className="lg:w-2/3 mx-auto p-5 lg:p-0">
                 <div className="p-2 py-10 bg-stone-800 px-5">
                   <h2 className="text-xl text-secondary text-center font-bold">Occy Directory Solutions</h2>
-                  <h3 className="font-bold text-lg text-center">Directory Management</h3>
-                  <p className="text-center font-serif text-lg">
-                    Ensure your Name, Address and Phone Number (NAP) are current
-                  </p>
-                  <div className="flex justify-end pt-5 space-x-3">
-                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Claim Benefit</a>
+                  <h3 className="font-bold text-lg text-center">Silver Membership</h3>
+                  <ul className="text-start list-disc mx-10 font-serif text-lg">
+                    <li>
+                      Premium listing.
+                    </li>
+                    <li>
+                      Upload your videos and photos.
+                    </li>
+                    <li>
+                      Upload your ratings and reviews.
+                    </li>
+                    <li>
+                      Free Trade Credits.
+                    </li>
+                    <li>
+                      AI content creator
+                    </li>
+                  </ul>
+                  <div className="flex justify-between pt-5 space-x-3">
+                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Members, buy your upgrade</a>
+                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Become a member and buy Silver</a>
                     <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Learn More</a>
                   </div>
                 </div>
@@ -186,18 +205,18 @@ export default function Home() {
               <div className="lg:w-2/3 mx-auto p-5 lg:p-0">
                 <div className="p-2 py-10 bg-stone-800 px-5">
                   <h2 className="text-xl text-secondary text-center font-bold">Occy Directory Solutions</h2>
-                  <h3 className="font-bold text-lg text-center">Reputation Management</h3>
-                  <p className="text-center font-serif text-lg">
-                    Protecting and enhancing your image, ensuring a positive online reputation to enable you to thrive.
-                    <br />
-                    <br />
-                    Monitoring with alerts on all major platforms.
-                    <br />
-                    <br />
-                    Tracking and responding to your reviews across multiple sites
-                  </p>
-                  <div className="flex justify-end pt-5 space-x-3">
-                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Claim Benefit</a>
+                  <h3 className="font-bold text-lg text-center">Gold Membership</h3>
+                  <ul className="text-start list-disc mx-10 font-serif text-lg">
+                    <li>Effectively build and use your database listing.</li>
+                    <li>Manage your ratings and reviews.</li>
+                    <li>Create a slider of multiple banner ads.</li>
+                    <li>Advertise offers for your products and services.</li>
+                    <li>Free Trade Credits.</li>
+                    <li>AI Content creator</li>
+                  </ul>
+                  <div className="flex justify-between pt-5 space-x-3">
+                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Members, buy your upgrade</a>
+                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Become a member and buy Gold</a>
                     <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Learn More</a>
                   </div>
                 </div>
@@ -215,12 +234,18 @@ export default function Home() {
               <div className="lg:w-2/3 mx-auto p-5 lg:p-0">
                 <div className="p-2 py-10 bg-stone-800 px-5">
                   <h2 className="text-xl text-secondary text-center font-bold">Occy Directory Solutions</h2>
-                  <h3 className="font-bold text-lg text-center">More than XX Solutions to help you grow your business including :</h3>
-                  <p className="text-center font-serif text-lg">
-                    XXXXXXXXXXXXX
-                  </p>
-                  <div className="flex justify-end pt-5 space-x-3">
-                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Claim Benefit</a>
+                  <h3 className="font-bold text-lg text-center">Platinum Membership</h3>
+                  <ul className="text-start list-disc mx-10 font-serif text-lg">
+                    <li>Manage your business reputation.</li>
+                    <li>Access to the latest business building sms and email courses</li>
+                    <li>Unlimited access to features like blogging and advertising.</li>
+                    <li>Advertise offers for your products and services.</li>
+                    <li>Free Trade Credits.</li>
+                    <li>AI Content creator</li>
+                  </ul>
+                  <div className="flex justify-between pt-5 space-x-3">
+                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Members, buy your upgrade</a>
+                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Become a member and buy Platinum</a>
                     <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Learn More</a>
                   </div>
                 </div>
