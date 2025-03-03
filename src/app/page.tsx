@@ -11,7 +11,8 @@ export default function Home() {
   const page5 = createRef<HTMLDivElement>()
   const page6 = createRef<HTMLDivElement>()
   const page7 = createRef<HTMLDivElement>()
-  const pages = [page1, page2, page3, page4, page5, page6, page7]
+  const page8 = createRef<HTMLDivElement>()
+  const pages = [page1, page2, page3, page4, page5, page6, page7, page8]
   let pageIndex = 0
   let canMove = true;
 
@@ -58,7 +59,7 @@ export default function Home() {
 
   return (
     <>
-      <Base ref={page1}>
+      <Base ref={page1} footerRef={page8}>
         <div className="place-content-center">
           <div className="relative">
             <Image src={"/penguins.jpg"} height={1500} width={1500} className="object-cover h-[60vh] lg:h-[80vh] w-screen" alt="Penguins" />
@@ -80,7 +81,7 @@ export default function Home() {
 
         <div className="min-h-screen place-content-center" ref={page2}>
           <div className="flex flex-col-reverse lg:flex-row pt-10">
-            <div className="lg:w-1/2 flex flex-col justify-center place-items-center mt-12">
+            <div className="lg:w-1/2 flex flex-col justify-center place-items-center mt-36">
               <div className="lg:w-2/3 px-5 lg:px-0 mx-auto">
                 <div className="p-2 py-10 bg-stone-800 px-5">
                   <h2 className="text-xl text-secondary text-center font-bold">Occy Social Alliances</h2>
@@ -99,20 +100,18 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/2 lg:-mt-12 p-5 ">
-              <div className="flex space-x-5 justify-center">
-                <Image src={"/octopus.png"} height={150} width={150} alt="Octopus Logo" className="place-self-center rounded-2xl object-cover" />
-                <p className="font-bold text-3xl self-center font-serif">Occy Social Alliances</p>
-              </div>
-              <p>Occy Social Alliances connect you to a dynamic global commerce ecosystem where people, businesses, and communities unite to inspire growth and success. With a focus on building meaningful alliances Occy empowers you to thrive</p>
+            <div className="lg:w-1/2 lg:-mt-24 p-5 text-xl">
+              <div className="flex space-x-5 justify-center pb-6 max-h-[70vh] object-cover">
+                <img src={"https://place-hold.it/750x750"} height={750} width={750} alt="Placeholder" />
+              </div> 
             </div>
           </div>
         </div>
 
         <div className="pt-10 min-h-screen content-center" ref={page3}>
-          <div className="flex flex-col-reverse lg:flex-row-reverse pt-10 lg:-mt-52">
+          <div className="flex flex-col-reverse lg:flex-row-reverse pt-10 ">
             <div className="lg:w-1/2 flex flex-col justify-center place-items-center">
-              <div className="lg:w-2/3 p-5 lg:p-0 mx-auto">
+              <div className="lg:w-2/3 p-5 lg:p-0 mx-auto lg:-mt-48">
                 <div className="p-2 py-10 bg-stone-800 px-5">
                   <h2 className="text-xl text-secondary text-center font-bold">Occy Business Alliances</h2>
                   <p className="text-justify font-serif text-lg">
@@ -130,14 +129,14 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/2 lg:mt-36">
+            <div className="lg:w-1/2 lg:mt-12">
               <img src={"https://place-hold.it/750x750"} className="mx-auto w-2/3" height={500} width={500} alt="Placeholder" />
             </div>
           </div>
         </div>
 
         <div className="lg:pt-10 min-h-screen content-center" ref={page4}>
-          <div className="flex flex-col-reverse lg:flex-row lg:pt-10 lg:-mt-52">
+          <div className="flex flex-col-reverse lg:flex-row lg:pt-10">
             <div className="lg:w-1/2 flex flex-col justify-center place-items-center">
               <div className="lg:w-2/3 m-5 px-5 lg:m-0 lg:px-0 mx-auto">
                 <div className="p-2 py-10 bg-stone-800 px-5">
@@ -148,24 +147,25 @@ export default function Home() {
                     <li>Free Trade Credits</li>
                     <li>Limited bonus offer, upgrade to Silver Membership</li>
                   </ul>
-                  <div className="flex justify-end pt-5 space-x-3">
-                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Claim Benefit</a>
+                  <div className="flex justify-between pt-5 space-x-3">
+                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Members, claim your listing</a>
+                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Become a member and claim</a>
                     <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Learn More</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/2 lg:mt-36 pb-5 lg:pb-0">
+            <div className="lg:w-1/2 lg:-mt-52 pb-5 lg:pb-0">
               <img src={"https://place-hold.it/750x750"} className="mx-auto w-2/3" height={500} width={500} alt="Placeholder" />
             </div>
           </div>
         </div>
 
         <div className="lg:pt-10 min-h-screen content-center" ref={page5}>
-          <div className="flex flex-col-reverse lg:flex-row-reverse lg:pt-10 lg:-mt-52">
+          <div className="flex flex-col-reverse lg:flex-row-reverse lg:pt-10">
             <div className="lg:w-1/2 flex flex-col justify-center place-items-center">
               <div className="lg:w-2/3 mx-auto p-5 lg:p-0">
-                <div className="p-2 py-10 bg-stone-800 px-5">
+                <div className="p-2 py-10 bg-stone-800 px-5 lg:-mt-52">
                   <h2 className="text-xl text-secondary text-center font-bold">Occy Directory Solutions</h2>
                   <h3 className="font-bold text-lg text-center">Silver Membership</h3>
                   <ul className="text-start list-disc mx-10 font-serif text-lg">
@@ -185,7 +185,7 @@ export default function Home() {
                       AI content creator
                     </li>
                   </ul>
-                  <div className="flex justify-between pt-5 space-x-3">
+                  <div className="flex justify-between pt-5 space-x-3 ">
                     <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Members, buy your upgrade</a>
                     <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Become a member and buy Silver</a>
                     <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 rounded-lg">Learn More</a>
@@ -193,14 +193,14 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/2 lg:mt-36">
+            <div className="lg:w-1/2 lg:mt-24">
               <img src={"https://place-hold.it/750x750"} className="mx-auto w-2/3" height={500} width={500} alt="Placeholder" />
             </div>
           </div>
         </div>
 
         <div className="lg:pt-10 min-h-screen content-center" ref={page6}>
-          <div className="flex flex-col-reverse lg:flex-row pt-10 lg:-mt-52">
+          <div className="flex flex-col-reverse lg:flex-row pt-10">
             <div className="lg:w-1/2 flex flex-col justify-center place-items-center">
               <div className="lg:w-2/3 mx-auto p-5 lg:p-0">
                 <div className="p-2 py-10 bg-stone-800 px-5">
@@ -222,7 +222,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/2 lg:mt-36">
+            <div className="lg:w-1/2 lg:-mt-52">
               <img src={"https://place-hold.it/750x750"} className="mx-auto w-2/3" height={500} width={500} alt="Placeholder" />
             </div>
           </div>

@@ -4,7 +4,8 @@ import Topbar from "./Topbar";
 
 type Props = {
     children: (JSX.Element | string)[] | (JSX.Element | string),
-    ref?: Ref<HTMLDivElement>
+    ref?: Ref<HTMLDivElement>,
+    footerRef: Ref<HTMLDivElement>
 }
 
 export default function Base(props: Props) {
@@ -15,7 +16,7 @@ export default function Base(props: Props) {
                 <div className="min-h-screen bg-primary text-white">
                     {props.children}
                 </div>
-                <Footer />
+                <Footer ref={props.footerRef} />
             </div>
         </>
     )
