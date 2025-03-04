@@ -7,7 +7,7 @@ type Prop = {
 export default function Footer(props: Prop) {
 
     return (
-        <div className="min-h-20 bg-stone-800 flex flex-col justify-center px-5 text-white py-64" ref={props.ref}>
+        <div className="min-h-10 bg-stone-800 flex flex-col justify-center px-5 text-white py-20" ref={props.ref}>
             <h4 className="text-2xl text-red-500 text-center">Footer - TBC</h4>
             <p className="text-secondary text-lg">About Us</p>
             <p><span className="text-secondary">It's all about you. Octopus Alliances</span> is an exciting, social enterprise, building a dynamic global commerce ecosystem that will empower
