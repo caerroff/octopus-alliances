@@ -33,8 +33,6 @@ export default function Home() {
         }
       }
 
-      console.log(pageIndex);
-
       pages[pageIndex].current?.scrollIntoView({ behavior: "smooth" })
 
       if (pageIndex == pages.length) {
@@ -85,7 +83,7 @@ export default function Home() {
               <div className="lg:w-2/3 px-5 lg:px-0 mx-auto">
                 <div className="pr-2 pt-10 bg-gray-950 px-5">
                   <h2 className="text-xl text-secondary text-center font-serif font-bold">Occy Social Alliances</h2>
-                  <p className="text-center font-serif text-lg">
+                  <p className="text-center font-serif pt-8 text-lg">
                     Occy Social Alliance is a decentralized world wide ecosystem with Time Credits, our community currency, to help facilitate authentic connection, collective action and a movement for good.
                     <br />
                     <br />
@@ -103,7 +101,7 @@ export default function Home() {
             <div className="lg:w-1/2 lg:-mt-[5%] p-5 text-xl">
               <div className="flex space-x-5 justify-center pb-6 max-h-[70vh] object-cover">
                 <img src={"https://place-hold.it/750x750"} height={750} width={750} alt="Placeholder" />
-              </div> 
+              </div>
             </div>
           </div>
         </div>
@@ -114,7 +112,7 @@ export default function Home() {
               <div className="lg:w-2/3 p-5 lg:p-0 mx-auto lg:-mt-[16%]">
                 <div className="p-2 py-10 bg-gray-950 px-10">
                   <h2 className="text-xl text-secondary text-center font-serif font-bold">Occy Business Alliances</h2>
-                  <p className="text-center font-serif text-lg">
+                  <p className="text-center font-serif text-lg pt-8">
                     Listing in a directory is often expensive, restrictive, in exible, inadequate and outdated, hindering business growth.
                     <br />
                     <br />
@@ -130,7 +128,9 @@ export default function Home() {
               </div>
             </div>
             <div className="lg:w-1/2 lg:mt-[8%]">
-              <img src={"https://place-hold.it/750x750"} className="mx-auto w-2/3" height={500} width={500} alt="Placeholder" />
+              <div className="flex justify-center m-5 max-h-[70vh] object-cover">
+                <img src={"https://place-hold.it/750x750"} height={750} width={750} alt="Placeholder" />
+              </div>
             </div>
           </div>
         </div>
@@ -141,8 +141,8 @@ export default function Home() {
               <div className="lg:w-2/3 m-5 px-5 lg:m-0 lg:px-0 mx-auto">
                 <div className="p-2 pt-10 bg-gray-950 space-y-10">
                   <h2 className="text-2xl text-secondary font-serif text-start ml-5 font-bold">Occy Directory Solutions</h2>
-                  <h3 className="font-bold text-lg text-start ml-5">Bronze Membership</h3>
-                  <ul className="text-start list-disc mx-10 font-serif text-lg ">
+                  <h3 className="font-bold text-lg text-start ml-5 pt-5">Bronze Membership</h3>
+                  <ul className="text-start list-disc mx-10 font-serif text-lg">
                     <li>Free Listing</li>
                     <li>Free Trade Credits</li>
                     <li>Limited bonus offer, upgrade to Silver Membership</li>
@@ -156,7 +156,9 @@ export default function Home() {
               </div>
             </div>
             <div className="lg:w-1/2 lg:-mt-52 pb-5 lg:pb-0">
-              <img src={"https://place-hold.it/750x750"} className="mx-auto w-2/3" height={500} width={500} alt="Placeholder" />
+              <div className="flex justify-center m-5 max-h-[70vh] object-cover">
+                <img src={"https://place-hold.it/750x750"} height={750} width={750} alt="Placeholder" />
+              </div>
             </div>
           </div>
         </div>
@@ -167,7 +169,7 @@ export default function Home() {
               <div className="lg:w-2/3 mx-auto p-5 lg:p-0">
                 <div className="p-2 bg-gray-950 pt-6 lg:-mt-[56%] space-y-5">
                   <h2 className="text-2xl text-secondary text-start font-serif font-bold ml-5">Occy Directory Solutions</h2>
-                  <h3 className="font-bold text-lg text-start ml-5">Silver Membership</h3>
+                  <h3 className="font-bold text-lg text-start ml-5 pt-5">Silver Membership</h3>
                   <ul className="text-start list-disc mx-10 font-serif text-lg">
                     <li>
                       Premium listing.
@@ -194,7 +196,9 @@ export default function Home() {
               </div>
             </div>
             <div className="lg:w-1/2 lg:mt-[6%]">
-              <img src={"https://place-hold.it/750x750"} className="mx-auto w-2/3" height={500} width={500} alt="Placeholder" />
+              <div className="flex justify-center m-5 max-h-[70vh] object-cover">
+                <img src={"https://place-hold.it/750x750"} height={750} width={750} alt="Placeholder" />
+              </div>
             </div>
           </div>
         </div>
@@ -205,7 +209,7 @@ export default function Home() {
               <div className="lg:w-2/3 mx-auto p-5 lg:p-0 lg:mt-[5%]">
                 <div className="p-2 pt-6 bg-gray-950 px-5 space-y-6">
                   <h2 className="text-2xl text-secondary text-start font-bold ml-5">Occy Directory Solutions</h2>
-                  <h3 className="font-bold text-lg text-start ml-5">Gold Membership</h3>
+                  <h3 className="font-bold text-lg text-start ml-5 pt-5">Gold Membership</h3>
                   <ul className="text-start list-disc list-inside mx-7 font-serif text-lg">
                     <li>Effectively build and use your database listing.</li>
                     <li>Manage your ratings and reviews.</li>
@@ -223,7 +227,9 @@ export default function Home() {
               </div>
             </div>
             <div className="lg:w-1/2 lg:-mt-[7%]">
-              <img src={"https://place-hold.it/750x750"} className="mx-auto w-2/3" height={500} width={500} alt="Placeholder" />
+              <div className="flex justify-center m-5 max-h-[70vh] object-cover">
+                <img src={"https://place-hold.it/750x750"} height={750} width={750} alt="Placeholder" />
+              </div>
             </div>
           </div>
         </div>
@@ -234,7 +240,7 @@ export default function Home() {
               <div className="lg:w-2/3 mx-auto p-5 lg:p-0">
                 <div className="p-2 pt-6 bg-gray-950 px-5 space-y-6">
                   <h2 className="text-2xl text-secondary text-start font-bold font-serif ml-5">Occy Directory Solutions</h2>
-                  <h3 className="font-bold text-lg text-start ml-5">Platinum Membership</h3>
+                  <h3 className="font-bold text-lg text-start ml-5 pt-5">Platinum Membership</h3>
                   <ul className="text-start list-disc mx-10 font-serif text-lg">
                     <li>Manage your business reputation.</li>
                     <li>Access to the latest business building sms and email courses</li>
@@ -252,7 +258,9 @@ export default function Home() {
               </div>
             </div>
             <div className="lg:w-1/2 lg:mt-[8%]">
-              <img src={"https://place-hold.it/750x750"} className="mx-auto w-2/3" height={500} width={500} alt="Placeholder" />
+              <div className="flex justify-center m-5 max-h-[70vh] object-cover">
+                <img src={"https://place-hold.it/750x750"} height={750} width={750} alt="Placeholder" />
+              </div>
             </div>
           </div>
         </div>
