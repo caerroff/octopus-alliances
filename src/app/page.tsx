@@ -92,7 +92,7 @@ export default function Home() {
                     <br />
                     Occy empowers a global member network providing spaces and opportunities for you to communicate and collaborate. Ultimately creating a more just, equitable and sustainable future together.
                   </p>
-                  <div className="flex justify-end">
+                  <div className="flex justify-end mt-5">
                     <a href="#" className="bg-secondary hover:bg-yellow-600 text-white font-serif p-2 mt-2 font-bold">Learn more</a>
                   </div>
                 </div>
