@@ -109,7 +109,7 @@ export default function Home() {
         <div className="pt-10 min-h-screen content-center" ref={page3}>
           <div className="flex flex-col-reverse lg:flex-row-reverse pt-10 ">
             <div className="lg:w-1/2 flex flex-col justify-center place-items-center">
-              <div className="lg:w-2/3 p-5 lg:p-0 mx-auto lg:-mt-[16%]">
+              <div className="lg:w-2/3 p-5 lg:p-0 mx-auto lg:mt-[5%]">
                 <div className="p-2 py-10 bg-gray-950 px-10">
                   <h2 className="text-xl text-secondary text-center font-serif font-bold">Occy Business Alliances</h2>
                   <p className="text-center font-serif text-lg pt-8">
@@ -127,7 +127,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/2 lg:mt-[8%]">
+            <div className="lg:w-1/2 lg:-mt-[7%]">
               <div className="flex justify-center m-5 max-h-[70vh] object-cover">
                 <img src={"https://place-hold.it/750x750"} height={750} width={750} alt="Placeholder" />
               </div>
@@ -135,10 +135,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="lg:pt-10 min-h-screen content-center" ref={page4}>
+        <div className="pt-10 min-h-screen content-center" ref={page4}>
           <div className="flex flex-col-reverse lg:flex-row lg:pt-10">
             <div className="lg:w-1/2 flex flex-col justify-center place-items-center">
-              <div className="lg:w-2/3 m-5 px-5 lg:m-0 lg:px-0 mx-auto">
+              <div className="lg:w-2/3 m-5 px-5 lg:m-0 lg:px-0 mx-auto lg:mt-[5%]">
                 <div className="p-2 pt-10 bg-gray-950 space-y-10">
                   <h2 className="text-2xl text-secondary font-serif text-start ml-5 font-bold">Occy Directory Solutions</h2>
                   <h3 className="font-bold text-lg text-start ml-5 pt-5">Bronze Membership</h3>
@@ -155,7 +155,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/2 lg:-mt-52 pb-5 lg:pb-0">
+            <div className="lg:w-1/2 lg:-mt-[7%] pb-5 lg:pb-0">
               <div className="flex justify-center m-5 max-h-[70vh] object-cover">
                 <img src={"https://place-hold.it/750x750"} height={750} width={750} alt="Placeholder" />
               </div>
@@ -163,11 +163,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="lg:pt-10 min-h-screen content-center" ref={page5}>
+        <div className="pt-10 min-h-screen content-center" ref={page5}>
           <div className="flex flex-col-reverse lg:flex-row-reverse lg:pt-10">
             <div className="lg:w-1/2 flex flex-col justify-center place-items-center">
               <div className="lg:w-2/3 mx-auto p-5 lg:p-0">
-                <div className="p-2 bg-gray-950 pt-6 lg:-mt-[56%] space-y-5">
+                <div className="p-2 bg-gray-950 pt-6 lg:-mt-[7%] space-y-5">
                   <h2 className="text-2xl text-secondary text-start font-serif font-bold ml-5">Occy Directory Solutions</h2>
                   <h3 className="font-bold text-lg text-start ml-5 pt-5">Silver Membership</h3>
                   <ul className="text-start list-disc mx-10 font-serif text-lg">
@@ -195,7 +195,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/2 lg:mt-[6%]">
+            <div className="lg:w-1/2 lg:mt-[5%]">
               <div className="flex justify-center m-5 max-h-[70vh] object-cover">
                 <img src={"https://place-hold.it/750x750"} height={750} width={750} alt="Placeholder" />
               </div>
@@ -203,8 +203,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="lg:pt-10 min-h-screen content-center" ref={page6}>
-          <div className="flex flex-col-reverse lg:flex-row pt-10">
+        <div className="pt-10 min-h-screen content-center" ref={page6}>
+          <div className="flex flex-col-reverse lg:flex-row">
             <div className="lg:w-1/2 flex flex-col justify-center place-items-center">
               <div className="lg:w-2/3 mx-auto p-5 lg:p-0 lg:mt-[5%]">
                 <div className="p-2 pt-6 bg-gray-950 px-5 space-y-6">
@@ -234,9 +234,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="lg:pt-10 min-h-screen content-center" ref={page7}>
+        <div className="pt-10 min-h-screen content-center" ref={page7}>
           <div className="flex flex-col-reverse lg:flex-row-reverse pb-5">
-            <div className="lg:w-1/2 flex flex-col justify-center place-items-center lg:-mt-[12%]">
+            <div className="lg:w-1/2 flex flex-col justify-center place-items-center lg:-mt-[7%]">
               <div className="lg:w-2/3 mx-auto p-5 lg:p-0">
                 <div className="p-2 pt-6 bg-gray-950 px-5 space-y-6">
                   <h2 className="text-2xl text-secondary text-start font-bold font-serif ml-5">Occy Directory Solutions</h2>
@@ -257,7 +257,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/2 lg:mt-[8%]">
+            <div className="lg:w-1/2 lg:mt-[5%]">
               <div className="flex justify-center m-5 max-h-[70vh] object-cover">
                 <img src={"https://place-hold.it/750x750"} height={750} width={750} alt="Placeholder" />
               </div>
