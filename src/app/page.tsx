@@ -109,7 +109,7 @@ export default function Home() {
         <div className="pt-10 min-h-screen content-center" ref={page3}>
           <div className="flex flex-col-reverse lg:flex-row-reverse pt-10 ">
             <div className="lg:w-1/2 flex flex-col justify-center place-items-center">
-              <div className="lg:w-2/3 p-5 lg:p-0 mx-auto lg:mt-[5%]">
+              <div className="lg:w-5/6 p-5 lg:p-0 mx-auto lg:mt-[5%]">
                 <div className="p-2 py-10 bg-gray-950 px-10">
                   <h2 className="text-xl text-secondary text-center font-serif font-bold">Occy Business Alliances</h2>
                   <p className="text-center font-serif text-lg pt-8">
@@ -127,7 +127,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/2 lg:-mt-[7%]">
+            <div className="lg:w-1/2 lg:-mt-[6%]">
               <div className="flex justify-center m-5 max-h-[70vh] object-cover">
                 <img src={"https://place-hold.it/750x750"} height={750} width={750} alt="Placeholder" />
               </div>
@@ -195,7 +195,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/2 lg:mt-[5%]">
+            <div className="lg:w-1/2 lg:mt-[2%]">
               <div className="flex justify-center m-5 max-h-[70vh] object-cover">
                 <img src={"https://place-hold.it/750x750"} height={750} width={750} alt="Placeholder" />
               </div>
@@ -257,7 +257,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/2 lg:mt-[5%]">
+            <div className="lg:w-1/2 lg:mt-[1%]">
               <div className="flex justify-center m-5 max-h-[70vh] object-cover">
                 <img src={"https://place-hold.it/750x750"} height={750} width={750} alt="Placeholder" />
               </div>
