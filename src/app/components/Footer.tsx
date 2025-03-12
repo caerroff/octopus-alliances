@@ -20,7 +20,8 @@ export default function Footer(props: Prop) {
                 <span className="text-secondary">Occy Business Alliance</span> is a powerful global system of country speci c directories for you to attract, convert and engage more customers.
                 Additionally with your utilization of our business currency, Trade Credits, we will create a business economy that will generate even
                 greater growth opportunities for you.</p>
-            <p className="text-secondary text-lg">Contact:</p>
+            <p className="text-secondary text-lg py-5">Contact:</p>
+            <p className="text-secondary text-lg py-5">Social Media:</p>
 
         </div>
     )
