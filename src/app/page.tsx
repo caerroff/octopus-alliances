@@ -92,8 +92,8 @@ export default function Home() {
                     <br />
                     Occy empowers a global member network providing spaces and opportunities for you to communicate and collaborate. Ultimately creating a more just, equitable and sustainable future together.
                   </p>
-                  <div className="flex justify-end mt-5">
-                    <a href="#" className="bg-secondary hover:bg-yellow-600 text-white font-serif p-2 mt-2 font-bold">Learn more</a>
+                  <div className="flex justify-center text-xl mt-5">
+                    <a href="#" className="bg-secondary hover:bg-yellow-600 text-white rounded-lg border border-white font-serif p-2 mt-2 font-bold">Learn more</a>
                   </div>
                 </div>
               </div>
@@ -148,10 +148,10 @@ export default function Home() {
                     <li>Free Trade Credits</li>
                     <li>Limited bonus offer, upgrade to Silver Membership</li>
                   </ul>
-                  <div className="flex justify-between pt-5 space-x-3">
-                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 text-black ">Members, claim your listing</a>
-                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 text-black ">Become a member and claim</a>
-                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 text-black ">Learn More</a>
+                  <div className="flex text-xl text-center justify-between pt-5 space-x-8">
+                    <a href="#" className="p-2 rounded-lg bg-amber-500 hover:bg-yellow-600 text-black border-black border-2">Members, claim your listing</a>
+                    <a href="#" className="p-2 rounded-lg bg-amber-500 hover:bg-yellow-600 text-black border-black border-2">Become a member and claim</a>
+                    <a href="#" className="p-2 rounded-lg bg-amber-500 hover:bg-yellow-600 text-black border-black border-2">Learn More</a>
                   </div>
                 </div>
               </div>
@@ -188,10 +188,10 @@ export default function Home() {
                       AI content creator
                     </li>
                   </ul>
-                  <div className="flex justify-between pt-6 space-x-3 ">
-                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 text-black">Members, buy your upgrade</a>
-                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 text-black">Become a member and buy Silver</a>
-                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 text-black">Learn More</a>
+                  <div className="flex text-xl text-center justify-between pt-5 space-x-8">
+                    <a href="#" className="p-2 rounded-lg bg-amber-500 hover:bg-yellow-600 text-black border-black border-2">Members, buy your upgrade</a>
+                    <a href="#" className="p-2 rounded-lg bg-amber-500 hover:bg-yellow-600 text-black border-black border-2">Become a member and buy Silver</a>
+                    <a href="#" className="p-2 rounded-lg bg-amber-500 hover:bg-yellow-600 text-black border-black border-2">Learn More</a>
                   </div>
                 </div>
               </div>
@@ -220,10 +220,10 @@ export default function Home() {
                     <li>AI Content creator</li>
                     <li>No set up fees.</li>
                   </ul>
-                  <div className="flex justify-between pt-6 space-x-3 ">
-                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 text-black">Members, buy your upgrade</a>
-                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 text-black">Become a member and buy Gold</a>
-                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 text-black">Learn More</a>
+                  <div className="flex text-xl text-center justify-between pt-5 space-x-8">
+                    <a href="#" className="p-2 rounded-lg bg-amber-500 hover:bg-yellow-600 text-black border-black border-2">Members, buy your upgrade</a>
+                    <a href="#" className="p-2 rounded-lg bg-amber-500 hover:bg-yellow-600 text-black border-black border-2">Become a member and buy Gold</a>
+                    <a href="#" className="p-2 rounded-lg bg-amber-500 hover:bg-yellow-600 text-black border-black border-2">Learn More</a>
                   </div>
                 </div>
               </div>
@@ -252,10 +252,10 @@ export default function Home() {
                     <li>AI Content creator</li>
                     <li>No set up fees</li>
                   </ul>
-                  <div className="flex justify-between pt-6 space-x-3 ">
-                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 text-black">Members, buy your upgrade</a>
-                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 text-black">Become a member and buy Platinum</a>
-                    <a href="#" className="p-2 bg-amber-500 hover:bg-yellow-600 text-black">Learn More</a>
+                  <div className="flex text-xl text-center justify-between pt-5 space-x-8">
+                    <a href="#" className="p-2 rounded-lg bg-amber-500 hover:bg-yellow-600 text-black border-black border-2">Members, buy your upgrade</a>
+                    <a href="#" className="p-2 rounded-lg bg-amber-500 hover:bg-yellow-600 text-black border-black border-2">Become a member and buy Platinum</a>
+                    <a href="#" className="p-2 rounded-lg bg-amber-500 hover:bg-yellow-600 text-black border-black border-2">Learn More</a>
                   </div>
                 </div>
               </div>
