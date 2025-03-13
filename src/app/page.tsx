@@ -60,7 +60,7 @@ export default function Home() {
       <Base ref={page1} footerRef={page8}>
         <div className="place-content-center">
           <div className="relative">
-            <Image src={"/penguins.jpg"} height={1500} width={1500} className="object-cover h-[60vh] lg:h-[70vh] xl:h-[75vh] w-screen" alt="Penguins" />
+            <Image src={"/penguins.jpg"} height={1500} width={1500} className="object-cover h-[60vh] xl:h-[66vh] w-screen" alt="Penguins" />
             {/* <div className="absolute bottom-24 left-0 right-0 text-center text-white text-shadow bg-slate-500 bg-opacity-20">
               <h1 className="text-3xl xl:text-7xl font-bold">Octopus Alliances</h1>
               <p className="text-xl xl:text-2xl font-bold">It&apos;s all about you</p>
@@ -68,9 +68,9 @@ export default function Home() {
           </div>
           <div className="px-3">
             {/* <p className="text-center text-xl">1927 conference that included Albert Einstein and Marie Curie. In all 27 Noble Prize winners attended.</p> */}
-            <h2 className="font-bold text-3xl italic text-center font-serif text-secondary py-6">It's all about you</h2>
+            <h2 className="font-bold text-3xl italic text-center font-serif text-secondary py-6">All about you</h2>
             <div className="flex justify-center">
-              <p className="text-xl text-center leading-5">
+              <p className="text-2xl text-center font-serif w-5/6 lg:w-2/3">
                 Octopus Alliances is a social enterprise, building a dynamic global commerce ecosystem that will empower you as individuals, businesses, and communities to connect, collaborate, contribute and thrive.
               </p>
             </div>
