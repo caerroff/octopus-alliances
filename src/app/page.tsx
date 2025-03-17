@@ -79,7 +79,7 @@ export default function Home() {
 
         <div className="min-h-screen place-content-center" ref={page2}>
           <div className="flex flex-col-reverse xl:flex-row pt-10">
-            <div className="xl:w-1/2 flex flex-col justify-center place-items-center xl:-mt-[1%]">
+            <div className="xl:w-1/2 flex flex-col justify-center place-items-center xl:-mt-[5%]">
               <div className="xl:w-2/3 px-5 xl:px-0 mx-auto">
                 <div className="pr-2 pt-10 px-5">
                   <h2 className="text-3xl text-secondary text-center font-serif font-bold">Occy Social Alliances</h2>
@@ -109,7 +109,7 @@ export default function Home() {
         <div className="pt-10 min-h-screen content-center" ref={page3}>
           <div className="flex flex-col-reverse xl:flex-row-reverse pt-10 ">
             <div className="xl:w-1/2 flex flex-col justify-center place-items-center">
-              <div className="xl:w-5/6 p-5 xl:p-0 mx-auto xl:-mt-[2%]">
+              <div className="xl:w-5/6 p-5 xl:p-0 mx-auto xl:-mt-[4%]">
                 <div className="p-2 py-10 px-10">
                   <h2 className="text-3xl text-secondary text-center font-serif font-bold">Occy Business Alliances</h2>
                   <p className="text-center font-serif text-2xl pt-8">
@@ -138,7 +138,7 @@ export default function Home() {
         <div className="pt-10 min-h-screen content-center" ref={page4}>
           <div className="flex flex-col-reverse xl:flex-row xl:pt-10">
             <div className="xl:w-1/2 flex flex-col justify-center place-items-center">
-              <div className="xl:w-2/3 m-5 px-5 xl:m-0 xl:px-0 mx-auto xl:mt-[5%]">
+              <div className="xl:w-3/4 m-5 px-5 xl:m-0 xl:px-0 mx-auto xl:mt-[3%]">
                 <div className="p-2 pt-10 space-y-10">
                   <h2 className="text-3xl text-secondary font-serif text-start ml-5 font-bold">Occy Directory Solutions</h2>
                   <h3 className="font-bold text-2xl text-start ml-5 pt-5">Bronze Membership</h3>
@@ -156,7 +156,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="xl:w-1/2 xl:-mt-[7%] pb-5 xl:pb-0">
+            <div className="xl:w-1/2 xl:-mt-[5%] pb-5 xl:pb-0">
               <div className="flex justify-center m-5 max-h-[70vh] object-cover">
                 <img src={"https://place-hold.it/750x750"} height={750} width={750} alt="Placeholder" />
               </div>
@@ -167,8 +167,8 @@ export default function Home() {
         <div className="pt-10 min-h-screen content-center" ref={page5}>
           <div className="flex flex-col-reverse xl:flex-row-reverse xl:pt-10">
             <div className="xl:w-1/2 flex flex-col justify-center place-items-center">
-              <div className="xl:w-2/3 mx-auto p-5 xl:p-0">
-                <div className="p-2 pt-6 xl:-mt-[7%] space-y-5">
+              <div className="xl:w-3/4 mx-auto p-5 xl:p-0">
+                <div className="p-2 pt-6 xl:-mt-[6%] space-y-5">
                   <h2 className="text-3xl text-secondary text-start font-serif font-bold ml-5">Occy Directory Solutions</h2>
                   <h3 className="font-bold text-2xl text-start ml-5 pt-5">Silver Membership</h3>
                   <ul className="text-start list-disc mx-10 font-serif text-2xl">
@@ -196,7 +196,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="xl:w-1/2 xl:mt-[2%]">
+            <div className="xl:w-1/2 xl:mt-[1%]">
               <div className="flex justify-center m-5 max-h-[70vh] object-cover">
                 <img src={"https://place-hold.it/750x750"} height={750} width={750} alt="Placeholder" />
               </div>
@@ -207,7 +207,7 @@ export default function Home() {
         <div className="pt-10 min-h-screen content-center" ref={page6}>
           <div className="flex flex-col-reverse xl:flex-row">
             <div className="xl:w-1/2 flex flex-col justify-center place-items-center">
-              <div className="xl:w-2/3 mx-auto p-5 xl:p-0 xl:mt-[5%]">
+              <div className="xl:w-3/4 mx-auto p-5 xl:p-0 xl:mt-[2%]">
                 <div className="p-2 pt-6 px-5 space-y-6">
                   <h2 className="text-3xl text-secondary text-start font-bold ml-5">Occy Directory Solutions</h2>
                   <h3 className="font-bold text-2xl text-start ml-5 pt-5">Gold Membership</h3>
@@ -228,7 +228,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="xl:w-1/2 xl:-mt-[7%]">
+            <div className="xl:w-1/2 xl:-mt-[3%]">
               <div className="flex justify-center m-5 max-h-[70vh] object-cover">
                 <img src={"https://place-hold.it/750x750"} height={750} width={750} alt="Placeholder" />
               </div>
@@ -238,8 +238,8 @@ export default function Home() {
 
         <div className="pt-10 min-h-screen content-center" ref={page7}>
           <div className="flex flex-col-reverse xl:flex-row-reverse pb-5">
-            <div className="xl:w-1/2 flex flex-col justify-center place-items-center xl:-mt-[7%]">
-              <div className="xl:w-2/3 mx-auto p-5 xl:p-0">
+            <div className="xl:w-1/2 flex flex-col justify-center place-items-center xl:-mt-[3%]">
+              <div className="xl:w-3/4 mx-auto p-5 xl:p-0">
                 <div className="p-2 pt-6 px-5 space-y-6">
                   <h2 className="text-3xl text-secondary text-start font-bold font-serif ml-5">Occy Directory Solutions</h2>
                   <h3 className="font-bold text-2xl text-start ml-5 pt-5">Platinum Membership</h3>
@@ -260,7 +260,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="xl:w-1/2 xl:mt-[1%]">
+            <div className="xl:w-1/2 xl:-mt-[3%]">
               <div className="flex justify-center m-5 max-h-[70vh] object-cover">
                 <img src={"https://place-hold.it/750x750"} height={750} width={750} alt="Placeholder" />
               </div>
