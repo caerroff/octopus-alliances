@@ -7,9 +7,9 @@ export default function Topbar() {
         <>
             <div className="flex justify-center bg-primary min-h-20 place-items-center px-5 p-1">
                 <div className="px-5 lg:px-36 py-2">
-                    <Image src={"/octopus-logo.png"} className="rounded-2xl ml-2" height={110} width={110} alt="Octopus Logo" />
+                    <Image src={"/octopus-logo.png"} className="rounded-2xl ml-2" height={115} width={115} alt="Octopus Logo" />
                 </div>
-                <div className="flex flex-col justify-center text-secondary text-5xl text-center font-bold underline underline-offset-[20px]">
+                <div className="flex flex-col justify-center text-secondary text-5xl text-center font-bold underline underline-offset-[18px]">
                     <h2>Octopus Alliances</h2>
                 </div>
                 {/* Social Media Icons below. Uncomment them whenever the social networks are ready to share ! */}
@@ -25,7 +25,7 @@ export default function Topbar() {
                     </a>
                     </div> */}
                 <div className="px-5 lg:px-36 py-2">
-                    <Image src={"/octopus-logo.png"} className="rounded-2xl ml-2" height={110} width={110} alt="Octopus Logo" />
+                    <Image src={"/octopus-logo.png"} className="rounded-2xl mr-2" height={115} width={115} alt="Octopus Logo" />
                 </div>
             </div>
 
